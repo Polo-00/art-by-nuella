@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Engraving in Calgary | Cutting Boards, Tumblers & More | Art by Nuella</title>
+<meta name="description" content="Custom engraving on wood boards, tumblers, bottles, glassware and journals with names, dates, artwork and logos. Made locally in Calgary, Chestermere and Airdrie.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Art by Nuella logo">
+      <div><div class="brand-name">ART BY NUELLA</div><div class="brand-tag">Personalized gifts crafted with love</div></div>
+    </a>
+    <nav class="main-nav"><a href="events.html">Events</a><a href="gifts.html">Gifts &amp; Baskets</a><a href="apparel.html">Apparel &amp; Merch</a><a href="engraving.html" class="active">Engraving</a><a href="crystals.html">Crystals &amp; Awards</a><a href="business.html">Business</a><a class="nav-quote" href="#quote">Get a Quote</a></nav>
+    <a class="btn btn-accent header-cta" href="tel:+15876647416">Call now</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<section class="hero page-hero" style="padding-bottom:40px">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="crumbs"><a href="index.html">Home</a> / Engraving</div><div class="badge">✍️ Engraving</div>
+      <h1>Engraved to be kept.</h1>
+      <p class="lead">Wood boards, tumblers, bottles, glassware and journals, engraved with names, dates, artwork and logos. It will not peel, fade or wash off.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="tel:+15876647416">📞 +1 (587) 664-7416</a>
+        <a class="btn btn-outline" href="#quote">Request a quote</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="images/board-detail.jpg" alt="Walnut cutting board engraved with a detailed house illustration">
+      <div class="hero-caption"><strong>Engraving work</strong><span>Cups, chopping boards, notebooks, glass and wood pieces finished with personal detail.</span></div>
+    </div>
+  </div>
+</section>
+<section class="tint" id="try-it"><div class="wrap">
+  <div class="section-head reveal"><div class="eyebrow">Try it</div><h2>See your name engraved.</h2><p>Type a name or a date, pick a piece and a style, and watch it come to life. This is a preview, and we always confirm the final design with you before anything is made.</p></div>
+  <div class="demo reveal">
+    <div class="demo-controls">
+      <label>Pick a piece</label>
+      <div class="seg"><button type="button" data-item="tumbler" class="on">Tumbler</button><button type="button" data-item="board">Cutting board</button><button type="button" data-item="crystal">Crystal</button></div>
+      <label for="d-line1" style="margin-top:18px">Name or main text</label>
+      <input id="d-line1" maxlength="22" value="The Johnsons" autocomplete="off">
+      <label for="d-line2" style="margin-top:14px">Date or short message <span style="font-weight:400;color:var(--muted-fg)">(optional)</span></label>
+      <input id="d-line2" maxlength="30" value="Est. 2024" autocomplete="off">
+      <label style="margin-top:18px">Style</label>
+      <div class="seg"><button type="button" data-font="script" class="on">Script</button><button type="button" data-font="serif">Classic</button><button type="button" data-font="bold">Bold</button></div>
+      <div class="demo-actions"><button type="button" class="btn btn-outline" id="d-replay">↻ Replay</button><a class="btn btn-accent" href="#quote" id="d-quote">Get a quote for this</a></div>
+    </div>
+    <div class="demo-stage">
+      <svg id="d-svg" viewBox="0 0 420 460" role="img" aria-label="Live engraving preview">
+        <defs>
+          <linearGradient id="g-tumbler" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#e3d5bc"/><stop offset=".5" stop-color="#fbf3e5"/><stop offset="1" stop-color="#d9c8ab"/></linearGradient>
+          <linearGradient id="g-board" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bb7a40"/><stop offset=".55" stop-color="#9c6130"/><stop offset="1" stop-color="#7c4a22"/></linearGradient>
+          <linearGradient id="g-crystal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f271e"/><stop offset="1" stop-color="#15100b"/></linearGradient>
+          <linearGradient id="g-laser" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffb36b" stop-opacity="0"/><stop offset=".5" stop-color="#fff2dc"/><stop offset="1" stop-color="#ffb36b" stop-opacity="0"/></linearGradient>
+          <filter id="f-blur" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="6"/></filter>
+          <filter id="f-glow" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="2.6"/></filter>
+          <clipPath id="d-clipp-engr"><rect id="d-clip-engr" x="0" y="0" width="0" height="0"/></clipPath>
+          <clipPath id="d-clipp-glow"><rect id="d-clip-glow" x="0" y="0" width="0" height="0"/></clipPath>
+        </defs>
+        <g id="d-item"></g>
+        <g clip-path="url(#d-clipp-engr)"><g id="d-text-engr"></g></g>
+        <g clip-path="url(#d-clipp-glow)" filter="url(#f-glow)"><g id="d-text-glow"></g></g>
+        <rect id="d-laser" width="3" x="0" y="0" height="0" rx="1.5" fill="url(#g-laser)" style="opacity:0"/>
+        <circle id="d-spark" r="4.5" cx="0" cy="0" fill="#ff9a4d" filter="url(#f-glow)" style="opacity:0"/>
+      </svg>
+    </div>
+  </div>
+</div></section>
+<script src="engrave.js" defer></script>
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Recent work</div><h2>Detail that lasts.</h2><p>Tap any photo to see it larger.</p></div>
+    <div class="page-gallery"><a class="pg-item" href="images/engraved-board.jpg" data-full="images/engraved-board.jpg"><img src="images/engraved-board.jpg" alt="Engraved chopping boards" loading="lazy"><div class="pg-cap">Engraved chopping boards<small>Family names and the house itself</small></div></a><a class="pg-item" href="images/board-detail.jpg" data-full="images/board-detail.jpg"><img src="images/board-detail.jpg" alt="Engraving detail" loading="lazy"><div class="pg-cap">Engraving detail</div></a><a class="pg-item" href="images/branded-tumblers.jpg" data-full="images/branded-tumblers.jpg"><img src="images/branded-tumblers.jpg" alt="Engraved tumblers" loading="lazy"><div class="pg-cap">Engraved tumblers<small>Custom names and logos, in bulk or one at a time</small></div></a><a class="pg-item" href="images/bottles.jpg" data-full="images/bottles.jpg"><img src="images/bottles.jpg" alt="Engraved bottles" loading="lazy"><div class="pg-cap">Engraved bottles</div></a><a class="pg-item" href="images/yeti-tumbler.jpg" data-full="images/yeti-tumbler.jpg"><img src="images/yeti-tumbler.jpg" alt="Premium tumblers" loading="lazy"><div class="pg-cap">Premium tumblers<small>Deep, permanent engraving</small></div></a><a class="pg-item" href="images/ig-mugs.jpg" data-full="images/ig-mugs.jpg"><img src="images/ig-mugs.jpg" alt="Engraved mugs" loading="lazy"><div class="pg-cap">Engraved mugs<small>Logos and monograms</small></div></a><a class="pg-item" href="images/ig-team-tumblers.jpg" data-full="images/ig-team-tumblers.jpg"><img src="images/ig-team-tumblers.jpg" alt="Team tumblers" loading="lazy"><div class="pg-cap">Team tumblers</div></a><a class="pg-item" href="images/wine-glass.jpg" data-full="images/wine-glass.jpg"><img src="images/wine-glass.jpg" alt="Etched glassware" loading="lazy"><div class="pg-cap">Etched glassware</div></a><a class="pg-item" href="images/engraved-bottle.jpg" data-full="images/engraved-bottle.jpg"><img src="images/engraved-bottle.jpg" alt="Engraved bottles &amp; decanters" loading="lazy"><div class="pg-cap">Engraved bottles &amp; decanters</div></a><a class="pg-item" href="images/cutting-board.jpg" data-full="images/cutting-board.jpg"><img src="images/cutting-board.jpg" alt="Engraved boards with logos" loading="lazy"><div class="pg-cap">Engraved boards with logos</div></a><a class="pg-item" href="images/leather-journal.jpg" data-full="images/leather-journal.jpg"><img src="images/leather-journal.jpg" alt="Leather journals" loading="lazy"><div class="pg-cap">Leather journals</div></a><a class="pg-item" href="images/engraved-knife.jpg" data-full="images/engraved-knife.jpg"><img src="images/engraved-knife.jpg" alt="Engraved keepsakes" loading="lazy"><div class="pg-cap">Engraved keepsakes</div></a><a class="pg-item" href="images/slate-coasters.jpg" data-full="images/slate-coasters.jpg"><span class="pg-tag">Concept</span><img src="images/slate-coasters.jpg" alt="Slate coasters" loading="lazy"><div class="pg-cap">Slate coasters</div></a><a class="pg-item" href="images/keychains.jpg" data-full="images/keychains.jpg"><span class="pg-tag">Concept</span><img src="images/keychains.jpg" alt="Wooden keychains" loading="lazy"><div class="pg-cap">Wooden keychains</div></a></div>
+    <p class="gallery-note">Photos marked <b>Concept</b> are design samples of what we can make for you. Everything else is real work.</p>
+  </div>
+</section>
+<section class="tint">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">What we engrave</div><h2>If you can name it, we can make it personal.</h2></div>
+    <div class="make-grid"><div class="make-card reveal"><div class="ico">🪵</div><h3>Chopping boards</h3><p>Family names, recipes, wedding dates, addresses or a house portrait.</p></div><div class="make-card reveal"><div class="ico">🥤</div><h3>Tumblers &amp; bottles</h3><p>Names, monograms and logos on insulated tumblers and water bottles.</p></div><div class="make-card reveal"><div class="ico">🍷</div><h3>Glassware</h3><p>Wine glasses, decanters and bottles etched for gifts and events.</p></div><div class="make-card reveal"><div class="ico">📓</div><h3>Notebooks &amp; journals</h3><p>Your name, artwork or logo on journals and planners.</p></div><div class="make-card reveal"><div class="ico">🎁</div><h3>Wood keepsakes</h3><p>Keychains, coasters, plaques and small pieces for favours and gifts.</p></div><div class="make-card reveal"><div class="ico">💎</div><h3>3D crystals</h3><p>Photos and designs engraved inside optical crystal.</p></div></div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">The process</div><h2>How engraving orders work.</h2></div>
+    <div class="steps"><div class="step reveal"><div class="n">01</div><h3>Send the details</h3><p>Tell us the item, the name or design, the timing and the story behind it. A phone call, an email or the form all work.</p></div><div class="step reveal"><div class="n">02</div><h3>We confirm the design</h3><p>We come back with the design, the details and a quote so you know exactly what you are getting.</p></div><div class="step reveal"><div class="n">03</div><h3>We make it and wrap it</h3><p>Your piece is made locally, checked, and ready to give. One-offs and bigger orders are both welcome.</p></div></div>
+  </div>
+</section>
+<section class="tint" id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Kind words</div>
+      <h2>What customers are saying.</h2>
+    </div>
+    <div class="rating-row reveal">
+      <div class="rating-big"><span class="num">5.0</span><div><span class="stars">★★★★★</span><small>Rated on Google</small></div></div>
+      <a class="btn btn-outline" href="https://share.google/pqAPcqJjy4SCjmEKZ" target="_blank" rel="noopener">Read our Google reviews</a>
+    </div>
+    <div class="quotes"><div class="quote reveal"><div class="stars">★★★★★</div><p>I particularly enjoyed working with ArtbyNuella. Her level of professionalism is top notch. I enjoyed how she carried me along in the various projects she did for me, her timeliness to deliver and prices are very fair and unbeatable. Her work is so neat and impeccable. Thumbs up. I will always recommend her to anyone in Calgary, Canada.</p><div class="who">Ehi E. <span>· Google review</span></div></div><div class="quote reveal"><div class="stars">★★★★★</div><p>Excellent artwork and commendable piece of art mastery. Very satisfied customer</p><div class="who">Festus O. <span>· Google review</span></div></div><div class="quote reveal"><div class="stars">★★★★★</div><p>Emma takes the time to explain and offer several options to choose from. I recommend her services for anyone looking for quality, on budget and a timely delivery job.</p><div class="who">Paul T. <span>· Google review</span></div></div></div>
+  </div>
+  
+</section>
+<section class="fast" id="quote-info">
+  <div class="wrap">
+    <h2>Fastest way to start</h2>
+    <p>Call, email or send a quick request. No cart, just talk to a maker.</p>
+    <div class="fast-grid">
+      <div><div class="label">Phone</div><div class="value"><a href="tel:+15876647416">+1 (587) 664-7416</a></div></div>
+      <div><div class="label">Email</div><div class="value"><a href="mailto:artbynuella@gmail.com">artbynuella@gmail.com</a></div></div>
+      <div><div class="label">Instagram</div><div class="value"><a href="https://www.instagram.com/artbynuella/" target="_blank" rel="noopener">@artbynuella</a></div></div>
+      <div><div class="label">Serving</div><div class="value">Calgary · Chestermere · Airdrie</div></div>
+    </div>
+  </div>
+</section>
+<section id="quote">
+  <div class="wrap">
+    <div class="quote-wrap">
+      <h2>Request a custom quote</h2>
+      <p>Send the item, the name or design, the timing and the story behind it. We will get back to you with a quote.</p>
+      <form class="quote-form">
+        <div class="form-row">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" type="text" required></div>
+          <div><label for="f-contact">Phone or email</label><input id="f-contact" name="contact" type="text" required></div>
+        </div>
+        <div class="form-row">
+          <div><label for="f-city">City</label><input id="f-city" name="city" type="text" placeholder="Calgary, Chestermere, Airdrie..."></div>
+          <div><label for="f-when">Timeline or event date</label><input id="f-when" name="when" type="text" placeholder="e.g. Nov 15, or 'in 2 weeks'"></div>
+        </div>
+        <div class="form-full"><label for="f-type">Project type</label><select id="f-type" name="type"><option>Event favours or gifts</option><option>Wedding</option><option>Birthday party</option><option>Baby or bridal shower</option><option>Graduation</option><option>Corporate or team event</option><option>Gift basket</option><option>Custom apparel</option><option>Engraved cup or bottle</option><option selected>Chopping board</option><option>Notebook or journal</option><option>Photo crystal</option><option>Plaque or award</option><option>Something else</option></select></div>
+        <div class="form-full"><label for="f-details">Project details</label><textarea id="f-details" name="details" placeholder="What is it for, how many, names or wording, colours or theme, photo or logo..."></textarea></div>
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-accent" type="submit">Send request</button>
+        <div class="form-error" role="alert"></div>
+        <div class="form-note">Prefer to talk? Call +1 (587) 664-7416 or message @artbynuella on Instagram.</div>
+      </form>
+      <div class="form-success"><h3>Thank you!</h3><p>We got your request and will be in touch soon. For the fastest reply, call +1 (587) 664-7416.</p></div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="margin-bottom:12px"><img src="images/logo.png" alt=""><div class="brand-name">ART BY NUELLA</div></div>
+        <p>Personalized gifts crafted with love. Family-owned and operated, made locally for Calgary, Chestermere, Airdrie.</p></div>
+      <div><h5>Explore</h5><a href="events.html">Events</a><a href="gifts.html">Gifts &amp; Baskets</a><a href="apparel.html">Apparel &amp; Merch</a><a href="engraving.html">Engraving</a><a href="crystals.html">Crystals &amp; Awards</a><a href="business.html">Business</a></div>
+      <div><h5>Contact</h5><a href="tel:+15876647416">+1 (587) 664-7416</a><a href="mailto:artbynuella@gmail.com">artbynuella@gmail.com</a><a href="https://www.instagram.com/artbynuella/" target="_blank" rel="noopener">Instagram @artbynuella</a><a href="https://share.google/pqAPcqJjy4SCjmEKZ" target="_blank" rel="noopener">Google reviews</a></div>
+      <div><h5>Serving</h5><p>Calgary<br>Chestermere<br>Airdrie<br>and nearby areas</p></div>
+    </div>
+    <div class="foot-base">© <span id="year">2026</span> Art by Nuella · Calgary, Chestermere &amp; Airdrie</div>
+  </div>
+</footer>
+<div class="call-bar"><a class="btn btn-accent" href="tel:+15876647416">Call now</a><a class="btn btn-outline" href="#quote">Get a quote</a></div>
+<script src="app.js"></script>
+</body>
+</html>
